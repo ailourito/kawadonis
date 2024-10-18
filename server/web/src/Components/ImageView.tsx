@@ -44,7 +44,7 @@ const ImageView: React.FC<ImageViewProps> = (
 
             <div className="flex flex-col md:flex-row w-full items-center justify-center my-2 md:my-5">
                 <a
-                    className="border border-gray-300 rounded-3xl bg-red-200 text-xl py-2 px-5 mb-5 md:mr-5 hover:bg-red-300"
+                    className="border border-gray-300 rounded-3xl bg-red-200 text-xl py-2 px-5 mb-5 md:mb-0 md:mr-5 hover:bg-red-300"
                     href={imageResult}
                     download="kawaii-donis.jpg"
                     onClick={downloadedImage}
