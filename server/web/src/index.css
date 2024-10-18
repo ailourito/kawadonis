@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.fredoka-font {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+body {
+    /* {{backgroundColor: "#FAACA8", backgroundImage: "linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%)"}} */
+    background-color: #020231;
+    background-image: "linear-gradient(19deg, #0606b6 0%, #0909c6 100%)";
+    font-family: 'fredoka';
+}
