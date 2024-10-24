@@ -47,17 +47,21 @@ def recognize_adonis(image_path, adonis_encodings):
         # Check for Adonis characteristics
         matches = face_recognition.compare_faces(adonis_encodings, face_encoding)
         name = "Not Adonis"
+        color = (0, 0, 255)
+        text_color = (255, 255, 255)
 
         if True in matches:
             name = "Adonis"
+            color = (0, 255, 0)
+            text_color = (0, 0, 0)
 
         # Add the box around the face
-        cv2.rectangle(image, (left, top), (right, bottom), (0, 255, 0), 2)
+        cv2.rectangle(image, (left, top), (right, bottom), color, 2)
 
         # Give a label
-        cv2.rectangle(image, (left, bottom - 35), (right, bottom), (0, 255, 0), cv2.FILLED)
+        cv2.rectangle(image, (left, bottom - 35), (right, bottom), color, cv2.FILLED)
         font = cv2.FONT_HERSHEY_DUPLEX
-        cv2.putText(image, name, (left + 6, bottom - 6), font, 0.4, (255, 255, 255), 1)
+        cv2.putText(image, name, (left + 6, bottom - 6), font, 0.4, text_color, 1)
 
     # Display the resulting image
     cv2.imshow('Image', image)

@@ -75,7 +75,7 @@ const DialogView: React.FC<DialogViewInterface> = (
                                             </span>{' '}
                                             AKA {' '}
                                             <span className="underline decoration-wavy decoration-red-900">
-                                                "the govement"
+                                                "the goverment"
                                             </span> {' '}
                                             to cheer him up!! Please wait a
                                             minute.

@@ -4,6 +4,10 @@ A simple web app to make Adonis a cute kawaii, by giving him a pretty blush, 2 c
 Access it directly on the link, or deploy it on your own. 
 
 
+The online application is going to be slower compared when deployed locally. The VM has only 2GB of RAM so it could take some time to process the image. 
+The larger the photo and more the faces it would take longer to load. 
+
+
 ## Training
 
 The training can be found under the `/training` folder.  It contains the code `trainer.py`, the final model is in the `model` directory and there are 3 test images inside the `media` folder. The training data is not there for an obvious reason, starting from copy and ending in rights. Just place your model images inside the model folder, run the script, and the pickle file will be ready to use. 
@@ -26,6 +30,6 @@ The fast-api backend of the application, where all the logic happens. It does th
 
 ### Build
 
-`sudo docker-compose up --build`
+`sudo docker compose up --build`
 
 This will take some time, mainly because of the python libraries, but after running it, you can access the web app on localhost, port 80. It currently offers no SSL, if you want ssl, you can either modify nginx to have a ceritifcate, or deploy it behind Cloudflare. 
