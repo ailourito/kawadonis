@@ -8,7 +8,7 @@ const Plug = () => {
         <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
          <a
            className="flex items-center gap-2 hover:underline hover:underline-offset-4 decoration-wavy text-red-100 text-xl animate-pulse hover:animate-none"
-           href="https://www.youtube.com/@OAilouros"
+           href="https://youtu.be/U2Xlst2eum4"
            target="_blank"
            rel="noopener noreferrer"
          >
